@@ -116,9 +116,17 @@
         transition: opacity .2s;
       }
 
-.slider:hover {
-  opacity: 1;
-}
+      .slider:hover {
+        opacity: 1;
+      }
+
+      input[type="radio"] {
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+      }
+
+
 </style>
 
         
@@ -175,126 +183,127 @@
 <h5 style="color:rgb(87, 87, 87);">Financial considerations &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importance</h5>  
 
 <div class="row">
-    <div class="col-25-stars">
-    <label for="country">Real Estate/Housing costs</label>
-  </div>
-  <div class="col-75-stars">
-    <ul class="rate-area">
-      <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-      <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-      <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-      <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-      <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
-    </ul>
-  </div>
-</div>
 
-<div class="row">
+
+
+
+
   <div class="col-25-stars">
-  <label for="country">Living expenses</label>
+  <label for="living">Living expenses</label>
 </div>
   <div class="col-75-stars">
     <ul class="rate-area">
-      <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-      <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-      <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-      <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-      <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
+      <input type="radio" id="5-star-living" name="rating-living" value="5" /><label for="5-star-living" title="Extremely important">5 stars</label>
+      <input type="radio" id="4-star-living" name="rating-living" value="4" /><label for="4-star-living" title="Very important">4 stars</label>
+      <input type="radio" id="3-star-living" name="rating-living" value="3" /><label for="3-star-living" title="Somewhat important">3 stars</label>
+      <input type="radio" id="2-star-living" name="rating-living" value="2" /><label for="2-star-living" title="Nice to have">2 stars</label>
+      <input type="radio" id="1-star-living" name="rating-living" value="1" /><label for="1-star-living" title="Not very critical">1 star</label>
     </ul>
   </div>
-</div>
-  
 
-<div class="row">
   <div class="col-25-stars">
-  <label for="country">Job market/employment opportunities</label>
-</div>
-  <div class="col-75-stars">
-    <ul class="rate-area">
-      <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-      <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-      <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-      <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-      <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
-    </ul>
+    <label for="housing">Real Estate/Housing costs</label>
   </div>
-</div>
+    <div class="col-75-stars">
+      <ul class="rate-area">
+        <input type="radio" id="5-star-housing" name="rating-housing" value="5" /><label for="5-star-housing" title="Extremely important">5 stars</label>
+        <input type="radio" id="4-star-housing" name="rating-housing" value="4" /><label for="4-star-housing" title="Very important">4 stars</label>
+        <input type="radio" id="3-star-housing" name="rating-housing" value="3" /><label for="3-star-housing" title="Somewhat important">3 stars</label>
+        <input type="radio" id="2-star-housing" name="rating-housing" value="2" /><label for="2-star-housing" title="Nice to have">2 stars</label>
+        <input type="radio" id="1-star-housing" name="rating-housing" value="1" /><label for="1-star-housing" title="Not very critical">1 star</label>
+      </ul>
+    </div>
 
-<div class="row">
+
   <div class="col-25-stars">
-  <label for="country">Local taxes (and incentives where offered)</label>
+  <label for="jobmarket">Job market/employment opportunities</label>
 </div>
   <div class="col-75-stars">
     <ul class="rate-area">
-      <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-      <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-      <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-      <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-      <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
+      <input type="radio" id="5-star-jobmarket" name="rating-jobmarket" value="5" /><label for="5-star-jobmarket" title="Extremely important">5 stars</label>
+      <input type="radio" id="4-star-jobmarket" name="rating-jobmarket" value="4" /><label for="4-star-jobmarket" title="Very important">4 stars</label>
+      <input type="radio" id="3-star-jobmarket" name="rating-jobmarket" value="3" /><label for="3-star-jobmarket" title="Somewhat important">3 stars</label>
+      <input type="radio" id="2-star-jobmarket" name="rating-jobmarket" value="2" /><label for="2-star-jobmarket" title="Nice to have">2 stars</label>
+      <input type="radio" id="1-star-jobmarket" name="rating-jobmarket" value="1" /><label for="1-star-jobmarket" title="Not very critical">1 star</label>
     </ul>
   </div>
-</div>
 
+
+
+  <div class="col-25-stars">
+  <label for="taxes">Local taxes (and incentives where offered)</label>
+</div>
+  <div class="col-75-stars">
+    <ul class="rate-area">
+      <input type="radio" id="5-star-taxes" name="rating-taxes" value="5" /><label for="5-star-taxes" title="Extremely important">5 stars</label>
+      <input type="radio" id="4-star-taxes" name="rating-taxes" value="4" /><label for="4-star-taxes" title="Very important">4 stars</label>
+      <input type="radio" id="3-star-taxes" name="rating-taxes" value="3" /><label for="3-star-taxes" title="Somewhat important">3 stars</label>
+      <input type="radio" id="2-star-taxes" name="rating-taxes" value="2" /><label for="2-star-taxes" title="Nice to have">2 stars</label>
+      <input type="radio" id="1-star-taxes" name="rating-taxes" value="1" /><label for="1-star-taxes" title="Not very critical">1 star</label>
+    </ul>
+  </div>
+
+<br> 
+<br> <br> 
 
 <br> 
 <h5 style="color:rgb(87, 87, 87);">Community &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importance</h5>  
-<div class="row">
-    <div class="col-25-stars">
-    <label for="country">Education/school quality</label>
-  </div>
-  <div class="col-75-stars">
-    <ul class="rate-area">
-      <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-      <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-      <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-      <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-      <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
-    </ul>
-  </div>
-</div>
 
-<div class="row">
+    <div class="col-25-stars">
+    <label for="schools">Education/school quality</label>
+  </div>
+  <div class="col-75-stars">
+    <ul class="rate-area">
+      <input type="radio" id="5-star-schools" name="rating-schools" value="5" /><label for="5-star-schools" title="Extremely important">5 stars</label>
+      <input type="radio" id="4-star-schools" name="rating-schools" value="4" /><label for="4-star-schools" title="Very important">4 stars</label>
+      <input type="radio" id="3-star-schools" name="rating-schools" value="3" /><label for="3-star-schools" title="Somewhat important">3 stars</label>
+      <input type="radio" id="2-star-schools" name="rating-schools" value="2" /><label for="2-star-schools" title="Nice to have">2 stars</label>
+      <input type="radio" id="1-star-schools" name="rating-schools" value="1" /><label for="1-star-schools" title="Not very critical">1 star</label>
+    </ul>
+  </div>
+
+
   <div class="col-25-stars">
-  <label for="country">Proximity to family and friends</label>
+  <label for="family">Proximity to family and friends</label>
 </div>
   <div class="col-75-stars">
     <ul class="rate-area">
-      <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-      <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-      <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-      <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-      <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
+      <input type="radio" id="5-star-family" name="rating-family" value="5" /><label for="5-star-family" title="Extremely important">5 stars</label>
+      <input type="radio" id="4-star-family" name="rating-family" value="4" /><label for="4-star-family" title="Very important">4 stars</label>
+      <input type="radio" id="3-star-family" name="rating-family" value="3" /><label for="3-star-family" title="Somewhat important">3 stars</label>
+      <input type="radio" id="2-star-family" name="rating-family" value="2" /><label for="2-star-family" title="Nice to have">2 stars</label>
+      <input type="radio" id="1-star-family" name="rating-family" value="1" /><label for="1-star-family" title="Not very critical">1 star</label>
     </ul>
   </div>
-</div>
+
   
 
-<div class="row">
+
   <div class="col-25-stars">
-  <label for="country">Racial and economic diversity</label>
+  <label for="diversity">Racial and economic diversity</label>
 </div>
   <div class="col-75-stars">
     <ul class="rate-area">
-      <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-      <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-      <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-      <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-      <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
+      <input type="radio" id="5-star-diversity" name="rating-diversity" value="5" /><label for="5-star-diversity" title="Extremely important">5 stars</label>
+      <input type="radio" id="4-star-diversity" name="rating-diversity" value="4" /><label for="4-star-diversity" title="Very important">4 stars</label>
+      <input type="radio" id="3-star-diversity" name="rating-diversity" value="3" /><label for="3-star-diversity" title="Somewhat important">3 stars</label>
+      <input type="radio" id="2-star-diversity" name="rating-diversity" value="2" /><label for="2-star-diversity" title="Nice to have">2 stars</label>
+      <input type="radio" id="1-star-diversity" name="rating-diversity" value="1" /><label for="1-star-diversity" title="Not very critical">1 star</label>
     </ul>
   </div>
-</div>
 
-<div class="row">
+
+
   <div class="col-25-stars">
-  <label for="country">Politics <i>(indicate political preference if important)</i></label>
+  <label for="politics">Politics <i>(indicate political preference if important)</i></label>
 </div>
   <div class="col-75-stars">
       <ul class="rate-area">
-        <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-        <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-        <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-        <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-        <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
+        <input type="radio" id="5-star-politics" name="rating-politics" value="5" /><label for="5-star-politics" title="Extremely important">5 stars</label>
+        <input type="radio" id="4-star-politics" name="rating-politics" value="4" /><label for="4-star-politics" title="Very important">4 stars</label>
+        <input type="radio" id="3-star-politics" name="rating-politics" value="3" /><label for="3-star-politics" title="Somewhat important">3 stars</label>
+        <input type="radio" id="2-star-politics" name="rating-politics" value="2" /><label for="2-star-politics" title="Nice to have">2 stars</label>
+        <input type="radio" id="1-star-politics" name="rating-politics" value="1" /><label for="1-star-politics" title="Not very critical">1 star</label>
       </ul>
       <p style="margin-top: 18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More Liberal &nbsp;<input type="range" min="1" max="100" value="50"> &nbsp; More convervative</p>
     
@@ -304,63 +313,63 @@
   <br> 
   
   <h5 style="color:rgb(87, 87, 87);">Productivity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importance</h5>  
-  <div class="row">
+ 
       <div class="col-25-stars">
-      <label for="country">Ease of commute</label>
+      <label for="commute">Ease of commute</label>
     </div>
     <div class="col-75-stars">
       <ul class="rate-area">
-        <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-        <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-        <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-        <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-        <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
+        <input type="radio" id="5-star-commute" name="rating-commute" value="5" /><label for="5-star-commute" title="Extremely important">5 stars</label>
+        <input type="radio" id="4-star-commute" name="rating-commute" value="4" /><label for="4-star-commute" title="Very important">4 stars</label>
+        <input type="radio" id="3-star-commute" name="rating-commute" value="3" /><label for="3-star-commute" title="Somewhat important">3 stars</label>
+        <input type="radio" id="2-star-commute" name="rating-commute" value="2" /><label for="2-star-commute" title="Nice to have">2 stars</label>
+        <input type="radio" id="1-star-commute" name="rating-commute" value="1" /><label for="1-star-commute" title="Not very critical">1 star</label>
       </ul>
     </div>
-  </div>
+ 
   
-  <div class="row">
+ 
     <div class="col-25-stars">
-    <label for="country">Distance to airport(s)</label>
+    <label for="airport">Distance to airport(s)</label>
   </div>
     <div class="col-75-stars">
       <ul class="rate-area">
-        <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-        <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-        <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-        <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-        <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
+        <input type="radio" id="5-star-airport" name="rating-airport" value="5" /><label for="5-star-airport" title="Extremely important">5 stars</label>
+        <input type="radio" id="4-star-airport" name="rating-airport" value="4" /><label for="4-star-airport" title="Very important">4 stars</label>
+        <input type="radio" id="3-star-airport" name="rating-airport" value="3" /><label for="3-star-airport" title="Somewhat important">3 stars</label>
+        <input type="radio" id="2-star-airport" name="rating-airport" value="2" /><label for="2-star-airport" title="Nice to have">2 stars</label>
+        <input type="radio" id="1-star-airport" name="rating-airport" value="1" /><label for="1-star-airport" title="Not very critical">1 star</label>
       </ul>
     </div>
-  </div>
+
     
   
-  <div class="row">
+ 
     <div class="col-25-stars">
-    <label for="country">High speed internet <i>(quality and availability)</i></label>
+    <label for="internet">High speed internet <i>(quality and availability)</i></label>
   </div>
     <div class="col-75-stars">
       <ul class="rate-area">
-        <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-        <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-        <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-        <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-        <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
+        <input type="radio" id="5-star-internet" name="rating-internet" value="5" /><label for="5-star-internet" title="Extremely important">5 stars</label>
+        <input type="radio" id="4-star-internet" name="rating-internet" value="4" /><label for="4-star-internet" title="Very important">4 stars</label>
+        <input type="radio" id="3-star-internet" name="rating-internet" value="3" /><label for="3-star-internet" title="Somewhat important">3 stars</label>
+        <input type="radio" id="2-star-internet" name="rating-internet" value="2" /><label for="2-star-internet" title="Nice to have">2 stars</label>
+        <input type="radio" id="1-star-internet" name="rating-internet" value="1" /><label for="1-star-internet" title="Not very critical">1 star</label>
       </ul>
     </div>
-  </div>
+ 
   
-  <div class="row">
+ 
     <div class="col-25-stars">
-    <label for="country">Time zone of where you live <i>(indicate preferences)</i></label>
+    <label for="timezone">Time zone of where you live <i>(indicate preferences)</i></label>
   </div>
     <div class="col-75-stars" style="margin-top: 15px;">
       
-          <input type="checkbox" id="PST" name="rating" value="1" /><label class="inline">&nbsp;Pacific</label>
-          <input type="checkbox" id="MST" name="rating" value="2" /><label class="inline">&nbsp;Mountain</label>
-          <input type="checkbox" id="CST" name="rating" value="3" /><label class="inline">&nbsp;Central</label>
-          <input type="checkbox" id="EST" name="rating" value="4" /><label class="inline">&nbsp;Eastern </label>
-          <input type="checkbox" id="ANY" name="rating" value="5" /><label class="inline">&nbsp;Others (e.g., Alaska, Hawaii) </label>
+          <input type="checkbox" id="PST" name="rating-timezone" value="1" /><label class="inline">&nbsp;Pacific</label>
+          <input type="checkbox" id="MST" name="rating-timezone" value="2" /><label class="inline">&nbsp;Mountain</label>
+          <input type="checkbox" id="CST" name="rating-timezone" value="3" /><label class="inline">&nbsp;Central</label>
+          <input type="checkbox" id="EST" name="rating-timezone" value="4" /><label class="inline">&nbsp;Eastern </label>
+          <input type="checkbox" id="ANY" name="rating-timezone" value="5" /><label class="inline">&nbsp;Others (e.g., Alaska, Hawaii) </label>
        
              
     </div>
@@ -370,175 +379,174 @@
     <br> <br>
     <h5 style="color:rgb(87, 87, 87);">Social considerations &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importance</h5>  
     
-    <div class="row">
+  
         <div class="col-25-stars">
-        <label for="country">Restaurant/bar/cafe options</label>
+        <label for="cafes">Restaurant/bar/cafe options</label>
       </div>
       <div class="col-75-stars">
         <ul class="rate-area">
-          <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-          <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-          <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-          <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-          <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
+          <input type="radio" id="5-star-cafes" name="rating-cafes" value="5" /><label for="5-star-cafes" title="Extremely important">5 stars</label>
+          <input type="radio" id="4-star-cafes" name="rating-cafes" value="4" /><label for="4-star-cafes" title="Very important">4 stars</label>
+          <input type="radio" id="3-star-cafes" name="rating-cafes" value="3" /><label for="3-star-cafes" title="Somewhat important">3 stars</label>
+          <input type="radio" id="2-star-cafes" name="rating-cafes" value="2" /><label for="2-star-cafes" title="Nice to have">2 stars</label>
+          <input type="radio" id="1-star-cafes" name="rating-cafes" value="1" /><label for="1-star-cafes" title="Not very critical">1 star</label>
         </ul>
       </div>
-    </div>
+    
 
 
 
 
-    <div class="row">
+   
       <div class="col-25-stars">
-      <label for="country">Nature/Outdoors activities</label>
+      <label for="nature">Nature/Outdoors activities</label>
     </div>
       <div class="col-75-stars">
         <ul class="rate-area">
-          <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-          <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-          <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-          <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-          <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
+          <input type="radio" id="5-star-nature" name="rating-nature" value="5" /><label for="5-star-nature" title="Extremely important">5 stars</label>
+          <input type="radio" id="4-star-nature" name="rating-nature" value="4" /><label for="4-star-nature" title="Very important">4 stars</label>
+          <input type="radio" id="3-star-nature" name="rating-nature" value="3" /><label for="3-star-nature" title="Somewhat important">3 stars</label>
+          <input type="radio" id="2-star-nature" name="rating-nature" value="2" /><label for="2-star-nature" title="Nice to have">2 stars</label>
+          <input type="radio" id="1-star-nature" name="rating-nature" value="1" /><label for="1-star-nature" title="Not very critical">1 star</label>
         </ul>
       </div>
-    </div>
+  
 
 
-    <div class="row">
+ 
       <div class="col-25-stars">
-      <label for="country">Weather <i>(e.g., sunny days)</i></label>
+      <label for="weather">Weather <i>(e.g., sunny days)</i></label>
     </div>
       <div class="col-75-stars">
         <ul class="rate-area">
-          <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-          <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-          <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-          <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-          <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
+          <input type="radio" id="5-star-weather" name="rating-weather" value="5" /><label for="5-star-weather" title="Extremely important">5 stars</label>
+          <input type="radio" id="4-star-weather" name="rating-weather" value="4" /><label for="4-star-weather" title="Very important">4 stars</label>
+          <input type="radio" id="3-star-weather" name="rating-weather" value="3" /><label for="3-star-weather" title="Somewhat important">3 stars</label>
+          <input type="radio" id="2-star-weather" name="rating-weather" value="2" /><label for="2-star-weather" title="Nice to have">2 stars</label>
+          <input type="radio" id="1-star-weather" name="rating-weather" value="1" /><label for="1-star-weather" title="Not very critical">1 star</label>
         </ul>
       </div>
-    </div>
+   
 
-    <div class="row">
+   
       <div class="col-25-stars">
-      <label for="country">Culture/Entertainment <i>(e.g., museums, theatres, concerts)</i></label>
+      <label for="culture">Culture/Entertainment <i>(e.g., museums, theatres, concerts)</i></label>
     </div>
       <div class="col-75-stars">
         <ul class="rate-area">
-          <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-          <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-          <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-          <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-          <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
+          <input type="radio" id="5-star-culture" name="rating-culture" value="5" /><label for="5-star-culture" title="Extremely important">5 stars</label>
+          <input type="radio" id="4-star-culture" name="rating-culture" value="4" /><label for="4-star-culture" title="Very important">4 stars</label>
+          <input type="radio" id="3-star-culture" name="rating-culture" value="3" /><label for="3-star-culture" title="Somewhat important">3 stars</label>
+          <input type="radio" id="2-star-culture" name="rating-culture" value="2" /><label for="2-star-culture" title="Nice to have">2 stars</label>
+          <input type="radio" id="1-star-culture" name="rating-culture" value="1" /><label for="1-star-culture" title="Not very critical">1 star</label>
         </ul>
       </div>
-    </div>
+  
 
     <br> <br>  
     <br> <br>
     <h5 style="color:rgb(87, 87, 87);">Health and safety &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Importance</h5>  
     
-    <div class="row">
+   
         <div class="col-25-stars">
-        <label for="country">Air quality</label>
+        <label for="air">Air quality</label>
       </div>
       <div class="col-75-stars">
         <ul class="rate-area">
-          <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-          <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-          <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-          <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-          <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
+          <input type="radio" id="5-star-air" name="rating-air" value="5" /><label for="5-star-air" title="Extremely important">5 stars</label>
+          <input type="radio" id="4-star-air" name="rating-air" value="4" /><label for="4-star-air" title="Very important">4 stars</label>
+          <input type="radio" id="3-star-air" name="rating-air" value="3" /><label for="3-star-air" title="Somewhat important">3 stars</label>
+          <input type="radio" id="2-star-air" name="rating-air" value="2" /><label for="2-star-air" title="Nice to have">2 stars</label>
+          <input type="radio" id="1-star-air" name="rating-air" value="1" /><label for="1-star-air" title="Not very critical">1 star</label>
         </ul>
       </div>
-    </div>
+   
 
 
 
 
-    <div class="row">
+ 
       <div class="col-25-stars">
-      <label for="country">Water quality and environment <i>(e.g., superfund sites)</i></label>
+      <label for="water">Water quality and environment <i>(e.g., superfund sites)</i></label>
     </div>
       <div class="col-75-stars">
         <ul class="rate-area">
-          <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-          <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-          <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-          <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-          <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
+          <input type="radio" id="5-star-water" name="rating-water" value="5" /><label for="5-star-water" title="Extremely important">5 stars</label>
+          <input type="radio" id="4-star-water" name="rating-water" value="4" /><label for="4-star-water" title="Very important">4 stars</label>
+          <input type="radio" id="3-star-water" name="rating-water" value="3" /><label for="3-star-water" title="Somewhat important">3 stars</label>
+          <input type="radio" id="2-star-water" name="rating-water" value="2" /><label for="2-star-water" title="Nice to have">2 stars</label>
+          <input type="radio" id="1-star-water" name="rating-water" value="1" /><label for="1-star-water" title="Not very critical">1 star</label>
         </ul>
       </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col-25-stars">
-      <label for="country">Minimal COVID spread/risk</label>
-    </div>
-      <div class="col-75-stars">
-        <ul class="rate-area">
-          <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-          <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-          <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-          <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-          <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25-stars">
-      <label for="country">Healthcare <i>(quality and availability)</i></label>
-    </div>
-      <div class="col-75-stars">
-        <ul class="rate-area">
-          <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-          <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-          <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-          <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-          <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25-stars">
-      <label for="country">Climate risk <i>(e.g., natural disasters)</i></label>
-    </div>
-      <div class="col-75-stars">
-        <ul class="rate-area">
-          <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-          <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-          <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-          <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-          <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25-stars">
-      <label for="country">Crime</label>
-    </div>
-      <div class="col-75-stars">
-        <ul class="rate-area">
-          <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Extremely important">5 stars</label>
-          <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Very important">4 stars</label>
-          <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Somewhat important">3 stars</label>
-          <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Nice to have">2 stars</label>
-          <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Not very critical">1 star</label>
-        </ul>
-      </div>
-    </div>
-
-
-    <div class="row">
     
-      <input type="submit" value="Show my results">
+
+
+   
+      <div class="col-25-stars">
+      <label for="covid">Minimal COVID spread/risk</label>
+    </div>
+      <div class="col-75-stars">
+        <ul class="rate-area">
+          <input type="radio" id="5-star-covid" name="rating-covid" value="5" /><label for="5-star-covid" title="Extremely important">5 stars</label>
+          <input type="radio" id="4-star-covid" name="rating-covid" value="4" /><label for="4-star-covid" title="Very important">4 stars</label>
+          <input type="radio" id="3-star-covid" name="rating-covid" value="3" /><label for="3-star-covid" title="Somewhat important">3 stars</label>
+          <input type="radio" id="2-star-covid" name="rating-covid" value="2" /><label for="2-star-covid" title="Nice to have">2 stars</label>
+          <input type="radio" id="1-star-covid" name="rating-covid" value="1" /><label for="1-star-covid" title="Not very critical">1 star</label>
+        </ul>
+      </div>
+  
+
+   
+      <div class="col-25-stars">
+      <label for="health">Healthcare <i>(quality and availability)</i></label>
+    </div>
+      <div class="col-75-stars">
+        <ul class="rate-area">
+          <input type="radio" id="5-star-health" name="rating-health" value="5" /><label for="5-star-health" title="Extremely important">5 stars</label>
+          <input type="radio" id="4-star-health" name="rating-health" value="4" /><label for="4-star-health" title="Very important">4 stars</label>
+          <input type="radio" id="3-star-health" name="rating-health" value="3" /><label for="3-star-health" title="Somewhat important">3 stars</label>
+          <input type="radio" id="2-star-health" name="rating-health" value="2" /><label for="2-star-health" title="Nice to have">2 stars</label>
+          <input type="radio" id="1-star-health" name="rating-health" value="1" /><label for="1-star-health" title="Not very critical">1 star</label>
+        </ul>
+      </div>
+   
+
+    
+      <div class="col-25-stars">
+      <label for="climaterisk">Climate risk <i>(e.g., natural disasters)</i></label>
+    </div>
+      <div class="col-75-stars">
+        <ul class="rate-area">
+          <input type="radio" id="5-star-climaterisk" name="rating-climaterisk" value="5" /><label for="5-star-climaterisk" title="Extremely important">5 stars</label>
+          <input type="radio" id="4-star-climaterisk" name="rating-climaterisk" value="4" /><label for="4-star-climaterisk" title="Very important">4 stars</label>
+          <input type="radio" id="3-star-climaterisk" name="rating-climaterisk" value="3" /><label for="3-star-climaterisk" title="Somewhat important">3 stars</label>
+          <input type="radio" id="2-star-climaterisk" name="rating-climaterisk" value="2" /><label for="2-star-climaterisk" title="Nice to have">2 stars</label>
+          <input type="radio" id="1-star-climaterisk" name="rating-climaterisk" value="1" /><label for="1-star-climaterisk" title="Not very critical">1 star</label>
+        </ul>
+      </div>
+    
+
+   
+      <div class="col-25-stars">
+      <label for="crime">Crime</label>
+    </div>
+      <div class="col-75-stars">
+        <ul class="rate-area">
+          <input type="radio" id="5-star-crime" name="rating-crime" value="5" /><label for="5-star-crime" title="Extremely important">5 stars</label>
+          <input type="radio" id="4-star-crime" name="rating-crime" value="4" /><label for="4-star-crime" title="Very important">4 stars</label>
+          <input type="radio" id="3-star-crime" name="rating-crime" value="3" /><label for="3-star-crime" title="Somewhat important">3 stars</label>
+          <input type="radio" id="2-star-crime" name="rating-crime" value="2" /><label for="2-star-crime" title="Nice to have">2 stars</label>
+          <input type="radio" id="1-star-crime" name="rating-crime" value="1" /><label for="1-star-crime" title="Not very critical">1 star</label>
+        </ul>
+      </div>
+    
+
+
+       <input type="submit" value="Show my results">
+    
     </div>
   </form>
-</div>
+
 
 
 <br> 
